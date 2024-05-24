@@ -1,10 +1,12 @@
 import "./App.css";
 import About from "./components/About";
+import Certification from "./components/Certification";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
-import Resume from "./components/Resume";
+import Skills from "./components/Skills";
 import Vasanth from "./components/Vasanth";
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <Vasanth />
       <About/>
       <Projects/>
-      <Resume/>
+      <Experience/>
+      <Skills/>
+      <Certification/>
       <Contact/>
       <Footer/>
     </div>

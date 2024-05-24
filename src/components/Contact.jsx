@@ -1,30 +1,58 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const config = {
-    email: "vasanthakumarvk677429@gmail.com",
-    phone_no: "9360367989",
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_g7x7acs",
+        "template_tg4zcrk",
+        form.current,
+        "g21vgIL33BgluOnDZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
+
   return (
     <section
       id="contact"
-      className="flex flex-row py-32 px-5 bg-primary text-black justify-center"
+      className="md:w-full flex flex-row py-20 px-4 md:px-16 bg-primary text-black justify-center"
     >
-      <div className="w-full flex items-center flex-col ">
-        <h1 className="text-4xl border-b-4 mb-5  border-[#ff4321] font-bold w-[160px]">
-          Contact
+      <div className="flex flex-col justify-center items-center px-5">
+        <h1 className="text-4xl border-b-4 border-[#ff4321] font-bold mb-5 w-[190px] ">
+          ContactUs
         </h1>
-        <p className=" pb-3 ">
-          If you want to discuss more in details, please contact me
-        </p>
-        <p className="pb-3">
-          <span className="pr-1 font-bold">Email:</span>
-          {config.email}
-        </p>
-        <p className="pb-3">
-          <span className="pr-1 font-bold">Phone:</span>
-          {config.phone_no}
-        </p>
+        <div className="">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="justify-center flex flex-col "
+          >
+            <label>Name</label>
+            <input type="text" name="user_name" className="input-box md:w-[600px]" />
+            <label>Email</label>
+            <input type="email" name="user_email" className="input-box  md:w-[600px]" />
+            <label>Message</label>
+            <textarea name="message" className="input-box  md:w-[600px]" />
+            <input
+              type="submit"
+              value="Send"
+              className="py-2 px-1 bg-[#ff4321]  mt-5 rounded-md  md:w-[600px]"
+            />
+          </form>
+        </div>
       </div>
     </section>
   );

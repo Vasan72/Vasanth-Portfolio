@@ -16,14 +16,19 @@ header ul li {
   @apply text-[#212121]
 }
 .bg-header {
- background-color: #edf2fc;
+ background-color: rgb(237, 242, 252);
 }
 .bg-primary {
   background-color: #edf2fc;
 }
-
+.about-img{
+  border-radius: 50%;
+  width: 400px;
+  height: 380px;
+  box-shadow: 0 4px 8px 0 rgba(97, 97, 97, 0.2), 0 6px 20px 0 rgba(230, 230, 230, 0.19);
+}
 .mobile-nav {
-  @apply fixed top-10 left-0 bg-[#2C4E80] w-full h-[250px];
+  @apply fixed z-50 top-14 left-0 bg-[#2C4E80] w-full h-[300px];
 }
 .mobile-nav li {
   @apply w-full h-full text-center border-b-2;
@@ -62,4 +67,17 @@ header ul li {
 html {
   scroll-behavior: smooth;
 }
+.icon-skill{
+  @apply w-[55px] h-[60px] md:w-[75px] md:h-[80px]  hover:border-[#edf2fc] hover:border-2 py-1 
+}
+
+.input-box{
+  padding:10px 10px;
+  font-size:15px;
+  outline: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 

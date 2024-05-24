@@ -57,7 +57,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="w-ful">
+      <div className="w-full">
         <div className="flex px-10 gap-5 flex-col md:flex-row ">
           {config.projects.map((project) => (  
             <div className="relative">
