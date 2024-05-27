@@ -9,7 +9,7 @@ import {
 const Vasanth = () => {
   const config = {
     subtitle: "Im a Full stack developer and Designer",
-    link: "https://drive.google.com/file/d/1LJoT2vOicWX2RCQNaIUDDRXhlF3Jejx6/view?usp=drive_link",
+    link: "https://drive.google.com/file/d/1eIoOEXHvi1rX9lYLi1YMdLnLSXRCnL3q/view?usp=drive_link",
   };
   return (
     <section
