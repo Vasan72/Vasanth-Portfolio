@@ -3,9 +3,7 @@ import AboutImage from "../assets/vk-about.png";
 
 const About = () => {
   const config ={
-    line1: ' Hi, My name is Vasanthakumar, I am Full stack Developer. I built beautiful Websites with Reactjs and Tailwind CSS.',
-    line2: 'I am proficient in Frontend skills like React.js, Redux, Redux Tool Kit, Axiosm, Tailwind CSS, Sass, Css3 and many more.',
-    line3: 'In backend, I know Node.js, Express.js, MongoDB.'
+    line1: 'Aspiring to be a full-stack developer, I am currently diving deep into React.js, Next.js, and MongoDB, building on my foundation in HTML5, CSS3, JavaScript, and Tailwind CSS. My journey is fueled by a passion for creating dynamic and responsive web applications. With each project, I am honing my skills and getting closer to achieving my goal.',
   }
   return (
     <section id="about" className="flex flex-col md:flex-row px-5 py-20 bg-secondary justify-between">
@@ -18,8 +16,6 @@ const About = () => {
           <p className=" pb-3">
            {config.line1}
           </p>
-          <p className=" pb-3">{config.line2}</p>
-          <p className=" pb-3">{config.line3}</p>
         </div>
       </div>
     </section>

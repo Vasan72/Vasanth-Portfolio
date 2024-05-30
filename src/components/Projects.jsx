@@ -1,7 +1,7 @@
 import weatherApp from "../assets/weather.jpg";
 import currencyConverter from "../assets/currencyConverter.jpg";
 import qrCode from "../assets/qr-code.jpg";
-import password from "../assets/password_generator.jpeg";
+import password from "../assets/password_generator.jpg";
 import clock from "../assets/digitalClock.jpeg";
 import React from "react";
 
@@ -31,7 +31,7 @@ const Projects = () => {
         image: password,
         description:
           "Password Gernerator App, Built with HTML CSS and React js",
-        link: "",
+        link: "https://password-generator-lime-tau.vercel.app/",
       },
       {
         pName:'Digital Clock',

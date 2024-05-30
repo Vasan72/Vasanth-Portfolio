@@ -5,12 +5,16 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
+import Resume from "../assets/Vasanth_resume.pdf";
 
 const Vasanth = () => {
+  const driveLink =
+    "https://drive.google.com/uc?id=1bO8ubXMkviWhPXYRKC3AQylHNaT6qkSt&export=download";
+  const fileName = "VasanthCV.pdf";
   const config = {
     subtitle: "Im a Full stack developer and Designer",
-    link: "https://drive.google.com/file/d/1eIoOEXHvi1rX9lYLi1YMdLnLSXRCnL3q/view?usp=drive_link",
   };
+
   return (
     <section
       id="vasanth"
@@ -23,7 +27,9 @@ const Vasanth = () => {
           Im <span className="text-[#ff4321]">Vasanthakumar</span>
           <p className="text-2xl">{config.subtitle}</p>
           <a
-            href={config.link}
+            href={driveLink}
+            download={fileName}
+            rel="noopener noreferrer"
             target="_blank"
             className="text-xl bg-[#212121] text-[#fff] rounded-md py-[3px] px-4"
           >
