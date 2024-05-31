@@ -5,12 +5,9 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
-import Resume from "../assets/Vasanth_resume.pdf";
+import Resume from "../assets/VasanthResume.pdf";
 
 const Vasanth = () => {
-  const driveLink =
-    "https://drive.google.com/uc?id=1bO8ubXMkviWhPXYRKC3AQylHNaT6qkSt&export=download";
-  const fileName = "VasanthCV.pdf";
   const config = {
     subtitle: "Im a Full stack developer and Designer",
   };
@@ -18,7 +15,7 @@ const Vasanth = () => {
   return (
     <section
       id="vasanth"
-      className="flex mt-15 pt-10 md:mt-18 flex-col md:flex-row px-5  bg-primary justify-center"
+      className="flex mt-14 pt-10 md:mt-18 flex-col md:flex-row px-5 drop-shadow-md bg-primary justify-center"
     >
       <div className="md:w-1/2 flex flex-col pt-20">
         <h1 className=" text-black text-5xl md:text-6xl font-vasanth-font">
@@ -27,8 +24,8 @@ const Vasanth = () => {
           Im <span className="text-[#ff4321]">Vasanthakumar</span>
           <p className="text-2xl">{config.subtitle}</p>
           <a
-            href={driveLink}
-            download={fileName}
+            href={Resume}
+            download='Vasanth_resume'
             rel="noopener noreferrer"
             target="_blank"
             className="text-xl bg-[#212121] text-[#fff] rounded-md py-[3px] px-4"
