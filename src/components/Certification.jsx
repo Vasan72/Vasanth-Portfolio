@@ -11,6 +11,7 @@ import panMl from "../assets/certificates/pan-ml.jpg";
 import python from "../assets/certificates/python.jpg";
 import skillAi from "../assets/certificates/skill-ai.jpg";
 import tnsdc from "../assets/certificates/tnsdc-ai.jpg";
+import GuviAmbassador from '../assets/certificates/guvi-abassdor.png'
 
 const Certification = () => {
   let [current, setCurrent] = useState(0);
@@ -24,16 +25,17 @@ const Certification = () => {
   };
 
   const images = [
+    GuviAmbassador,
+    python,
     accenture,
-    guvi,
     ideathon,
     learnathon,
+    tnsdc,
     panAi,
     panData,
     panMl,
-    python,
     skillAi,
-    tnsdc,
+    guvi,
   ];
 
   return (

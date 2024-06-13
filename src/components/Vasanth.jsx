@@ -5,7 +5,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineGithub,
 } from "react-icons/ai";
-import Resume from "../assets/VasanthResume.pdf";
+import Resume from "../assets/Vasanth-Resume.pdf";
 
 const Vasanth = () => {
   const config = {
@@ -25,7 +25,7 @@ const Vasanth = () => {
           <p className="text-2xl">{config.subtitle}</p>
           <a
             href={Resume}
-            download='Vasanth_resume'
+            download='Vasanth_Resume'
             rel="noopener noreferrer"
             target="_blank"
             className="text-xl bg-[#212121] text-[#fff] rounded-md py-[3px] px-4"

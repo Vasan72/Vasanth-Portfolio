@@ -9,7 +9,7 @@ const Experience = () => {
       line2: "PANTECH SOLUTIONS, VIRTUAL - INTERNSHIP ON DATA ANALYTICS ",
       date2: '26 JAN 2024 - 26 FEB 2024',
       line3: "PANTECH SOLUTIONS, VIRTUAL - INTERNSHIP ON MI ",
-      date3: '1 MAR 2024 - 1 APR 2024'
+      date3: '1 MAR 2024 - 1 APR 2024'  
     }
     
   }
